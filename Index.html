@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Teste</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles.css"/>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<main>
+			<form name="form">
+				<label for="name">Nome:</label>
+				<input type="text" id="name" name="name" minlength="7" required />
+
+				<br /><br/>
+
+				<label for="name">Sexo:</label>
+				<input type="radio" id="male" name="gender" value="male" checked />
+				<label for="male">Feminino</label>
+				<input type="radio" id="male" name="gender" value="male" />
+				<label for="male">Masculino</label>
+
+				<br /><br />
+
+				<label for="civilStatus">Estado Cívil:</label>
+				<select name="civilStatus" id="civilStatus">
+					<option value="single">Solteiro</option>
+					<option value="married">Casado</option>
+					<option value="divorced">Divorciado</option>
+					<option value="widowed">Viúvo</option>
+				</select>
+
+				<br /><br />
+
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required />
+
+				<br /><br />
+
+				<label for="pwd">Senha:</label>
+				<input type="password" id="pwd" name="pwd" minlength="6" required />
+				<br />
+				<label for="rePwd">Confirma Senha:</label>
+				<input type="password" id="rePwd" name="rePwd" minlength="6" required />
+
+				<br /><br />
+
+				<input type="submit" onsubmit="formAutenticator()">Cadastrar</input>
+			</form>
+		</main>
+	</body>
+</html>
