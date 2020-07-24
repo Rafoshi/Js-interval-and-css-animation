@@ -1,19 +1,84 @@
-main {
-	display: flex;
-	justify-content: center;
+body {
 	font-family: Arial;
+	background-color: #2b95fa;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-form label {
-	font-size: 24px;
+h1 {
+	text-align: center;
+	animation: slide 0.5s ease-in-out;
+}
+
+h2 {
+	animation: slide 0.5s ease-in-out;
+	margin-top: 5%;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
 }
 
 button {
-	width: 100%;
 	height: 40px;
-	border-color: red;
-	border-width: 5px;
-	background-color: transparent;
-	color: red;
+	border-style: none;
 	font-weight: bold;
+	animation: slide 0.5s ease-in-out;
+}
+
+#bar {
+	display: flex;
+	width: 50%;
+	height: 30px;
+	position: relative;
+	display: flex;
+	background-color: #ddd;
+	animation: slide 0.5s ease-in-out;
+}
+
+#progress {
+	background-color: hsl(244, 77%, 59%);
+	width: 0px;
+	height: 30px;
+	position: absolute;
+}
+
+.loading {
+	margin-top: 50px;
+}
+
+.loader {
+	animation: spin 1500ms infinite linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(-100%);
+		opacity: 0.2;
+	}
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
 }

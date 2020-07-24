@@ -1,52 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Teste</title>
+		<title>JavaScript - Interval</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="styles.css"/>
-		<script src="index.js"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="scripts.js"></script>
 	</head>
 	<body>
-		<main>
-			<form name="form">
-				<label for="name">Nome:</label>
-				<input type="text" id="name" name="name" minlength="7" required />
+		<h1>Clique para ver as animações</h1>
 
-				<br /><br/>
+		<div class="btn">
+			<button onclick="animations()">Veja as animações</button>
+		</div>
 
-				<label for="name">Sexo:</label>
-				<input type="radio" id="male" name="gender" value="male" checked />
-				<label for="male">Feminino</label>
-				<input type="radio" id="male" name="gender" value="male" />
-				<label for="male">Masculino</label>
+		<br />
 
-				<br /><br />
+		<h2 id="header" class="">JavaScript Progress Bar</h2>
 
-				<label for="civilStatus">Estado Cívil:</label>
-				<select name="civilStatus" id="civilStatus">
-					<option value="single">Solteiro</option>
-					<option value="married">Casado</option>
-					<option value="divorced">Divorciado</option>
-					<option value="widowed">Viúvo</option>
-				</select>
+		<div id="bar">
+			<div id="progress"></div>
+		</div>
 
-				<br /><br />
+		<br />
 
-				<label for="email">E-mail:</label>
-				<input type="email" id="email" name="email" required />
+		<h2 id="header" class="">JavaScript Loading Icon</h2>
 
-				<br /><br />
-
-				<label for="pwd">Senha:</label>
-				<input type="password" id="pwd" name="pwd" minlength="6" required />
-				<br />
-				<label for="rePwd">Confirma Senha:</label>
-				<input type="password" id="rePwd" name="rePwd" minlength="6" required />
-
-				<br /><br />
-
-				<input type="submit" onsubmit="formAutenticator()">Cadastrar</input>
-			</form>
-		</main>
+		<div class="loading">
+			<img class="" id="load" src="./assets/loader.svg" alt="Loading" />
+		</div>
 	</body>
 </html>
